@@ -11,24 +11,31 @@ import UIKit
 
 class DetailsController: UIViewController {
     
-    private let viewModel: DetailsViewModel
+    private let place: Place!
     @IBOutlet weak var descriptionView: UITextView!
     
-    init(viewModel: DetailsViewModel) {
-        self.viewModel = viewModel;
+    init(place: Place) {
+        self.place = place;
         super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
-        self.viewModel = DetailsViewModel(title: "", description: "");
+        self.place = nil
         fatalError("init(coder:) has not been implemented")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = viewModel.title
-        self.descriptionView.text = viewModel.description
+        self.navigationItem.title = "Place Details"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        place.fetchInfo { info in
+            self.descriptionView.text = info
+        }
     }
 
 }

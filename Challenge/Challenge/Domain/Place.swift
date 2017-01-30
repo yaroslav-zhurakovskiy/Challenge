@@ -10,6 +10,6 @@ import Foundation
 
 
 protocol Place {
-    var displayText: String { get }
+    var name: String { get }
     func fetchInfo(completion: @escaping (String?) -> Void)
 }

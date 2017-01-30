@@ -11,13 +11,13 @@ import SwiftyJSON
 
 
 class GooglePlace: Place {
-    let displayText: String
+    let name: String
     private let placeID: String
     private let service: GooglePlaceService
     
     
     init(json: JSON, service: GooglePlaceService) {
-        self.displayText = json["description"].stringValue
+        self.name = json["description"].stringValue
         self.placeID = json["place_id"].stringValue
         self.service = service
     }

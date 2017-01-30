@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		37F2BA54A6DC325D0306AA42 /* Pods_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6275C89E714651D1B3E0E2 /* Pods_Challenge.framework */; };
-		C40BF6791E3FD525005B7748 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BF6781E3FD525005B7748 /* GooglePlace.swift */; };
+		C40BF67C1E3FE1BD005B7748 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BF67A1E3FE1BD005B7748 /* GooglePlace.swift */; };
+		C40BF67D1E3FE1BD005B7748 /* GooglePlaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BF67B1E3FE1BD005B7748 /* GooglePlaceService.swift */; };
+		C40BF67F1E3FE1C7005B7748 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BF67E1E3FE1C7005B7748 /* ListRouter.swift */; };
 		C46C3CB21E3FC96000BB359A /* DetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46C3CB01E3FC96000BB359A /* DetailsController.swift */; };
 		C46C3CB31E3FC96000BB359A /* DetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C46C3CB11E3FC96000BB359A /* DetailsController.xib */; };
-		C46C3CB51E3FCBBA00BB359A /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46C3CB41E3FCBBA00BB359A /* DetailsViewModel.swift */; };
-		C46C3CB81E3FCD8400BB359A /* GooglePlaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46C3CB71E3FCD8400BB359A /* GooglePlaceService.swift */; };
 		C4E498B91E3FB1C300E567C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E498B81E3FB1C300E567C6 /* AppDelegate.swift */; };
 		C4E498C01E3FB1C300E567C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4E498BF1E3FB1C300E567C6 /* Assets.xcassets */; };
 		C4E498C31E3FB1C300E567C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E498C11E3FB1C300E567C6 /* LaunchScreen.storyboard */; };
@@ -23,13 +23,10 @@
 		C4E498FC1E3FB73100E567C6 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E498FA1E3FB73100E567C6 /* Place.swift */; };
 		C4E498FD1E3FB73100E567C6 /* PlaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E498FB1E3FB73100E567C6 /* PlaceService.swift */; };
 		C4E498FF1E3FB75400E567C6 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E498FE1E3FB75400E567C6 /* ListController.swift */; };
-		C4E499031E3FB89000E567C6 /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E499011E3FB89000E567C6 /* PlaceCell.swift */; };
-		C4E499041E3FB89000E567C6 /* PlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E499021E3FB89000E567C6 /* PlaceCell.xib */; };
 		C4E499071E3FB94700E567C6 /* FakePlaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E499061E3FB94700E567C6 /* FakePlaceService.swift */; };
 		C4E499091E3FBA4200E567C6 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E499081E3FBA4200E567C6 /* Result.swift */; };
 		C4E4990B1E3FBB1100E567C6 /* ListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E4990A1E3FBB1100E567C6 /* ListController.xib */; };
 		C4E4990D1E3FBD7600E567C6 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E4990C1E3FBD7600E567C6 /* ListPresenter.swift */; };
-		C4E4990F1E3FC56200E567C6 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E4990E1E3FC56200E567C6 /* ListRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,11 +50,11 @@
 		5BC3145AD43F1EC836A6B53B /* Pods_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8967A9F5C3CE537EE63AEFBD /* Pods_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9869F8DBD1701F969FBB2DFC /* Pods-Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Challenge/Pods-Challenge.debug.xcconfig"; sourceTree = "<group>"; };
-		C40BF6781E3FD525005B7748 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
+		C40BF67A1E3FE1BD005B7748 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GooglePlace.swift; path = Google/GooglePlace.swift; sourceTree = "<group>"; };
+		C40BF67B1E3FE1BD005B7748 /* GooglePlaceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GooglePlaceService.swift; path = Google/GooglePlaceService.swift; sourceTree = "<group>"; };
+		C40BF67E1E3FE1C7005B7748 /* ListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListRouter.swift; path = Screens/List/ListRouter.swift; sourceTree = "<group>"; };
 		C46C3CB01E3FC96000BB359A /* DetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsController.swift; sourceTree = "<group>"; };
 		C46C3CB11E3FC96000BB359A /* DetailsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsController.xib; sourceTree = "<group>"; };
-		C46C3CB41E3FCBBA00BB359A /* DetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
-		C46C3CB71E3FCD8400BB359A /* GooglePlaceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlaceService.swift; sourceTree = "<group>"; };
 		C4E498B51E3FB1C300E567C6 /* Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E498B81E3FB1C300E567C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4E498BF1E3FB1C300E567C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,13 +71,10 @@
 		C4E498FA1E3FB73100E567C6 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Place.swift; path = Domain/Place.swift; sourceTree = "<group>"; };
 		C4E498FB1E3FB73100E567C6 /* PlaceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaceService.swift; path = Domain/PlaceService.swift; sourceTree = "<group>"; };
 		C4E498FE1E3FB75400E567C6 /* ListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListController.swift; path = Screens/List/ListController.swift; sourceTree = "<group>"; };
-		C4E499011E3FB89000E567C6 /* PlaceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaceCell.swift; path = Screens/List/PlaceCell.swift; sourceTree = "<group>"; };
-		C4E499021E3FB89000E567C6 /* PlaceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlaceCell.xib; path = Screens/List/PlaceCell.xib; sourceTree = "<group>"; };
 		C4E499061E3FB94700E567C6 /* FakePlaceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FakePlaceService.swift; path = Fake/FakePlaceService.swift; sourceTree = "<group>"; };
 		C4E499081E3FBA4200E567C6 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Domain/Result.swift; sourceTree = "<group>"; };
 		C4E4990A1E3FBB1100E567C6 /* ListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListController.xib; path = Screens/List/ListController.xib; sourceTree = "<group>"; };
 		C4E4990C1E3FBD7600E567C6 /* ListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListPresenter.swift; path = Screens/List/ListPresenter.swift; sourceTree = "<group>"; };
-		C4E4990E1E3FC56200E567C6 /* ListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
 		CA6275C89E714651D1B3E0E2 /* Pods_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7CD062A255D250ECB421602 /* Pods-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Challenge/Pods-Challenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,7 +129,6 @@
 			children = (
 				C46C3CB01E3FC96000BB359A /* DetailsController.swift */,
 				C46C3CB11E3FC96000BB359A /* DetailsController.xib */,
-				C46C3CB41E3FCBBA00BB359A /* DetailsViewModel.swift */,
 			);
 			name = Details;
 			sourceTree = "<group>";
@@ -143,8 +136,8 @@
 		C46C3CB61E3FCD5E00BB359A /* Google */ = {
 			isa = PBXGroup;
 			children = (
-				C46C3CB71E3FCD8400BB359A /* GooglePlaceService.swift */,
-				C40BF6781E3FD525005B7748 /* GooglePlace.swift */,
+				C40BF67A1E3FE1BD005B7748 /* GooglePlace.swift */,
+				C40BF67B1E3FE1BD005B7748 /* GooglePlaceService.swift */,
 			);
 			name = Google;
 			sourceTree = "<group>";
@@ -226,14 +219,12 @@
 		C4E498F11E3FB51D00E567C6 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				C40BF67E1E3FE1C7005B7748 /* ListRouter.swift */,
 				C4E498F61E3FB72700E567C6 /* ListView.swift */,
 				C4E498F71E3FB72700E567C6 /* PlaceViewModel.swift */,
 				C4E498FE1E3FB75400E567C6 /* ListController.swift */,
 				C4E4990A1E3FBB1100E567C6 /* ListController.xib */,
-				C4E499011E3FB89000E567C6 /* PlaceCell.swift */,
-				C4E499021E3FB89000E567C6 /* PlaceCell.xib */,
 				C4E4990C1E3FBD7600E567C6 /* ListPresenter.swift */,
-				C4E4990E1E3FC56200E567C6 /* ListRouter.swift */,
 			);
 			name = List;
 			sourceTree = "<group>";
@@ -362,7 +353,6 @@
 				C4E498C31E3FB1C300E567C6 /* LaunchScreen.storyboard in Resources */,
 				C4E498C01E3FB1C300E567C6 /* Assets.xcassets in Resources */,
 				C46C3CB31E3FC96000BB359A /* DetailsController.xib in Resources */,
-				C4E499041E3FB89000E567C6 /* PlaceCell.xib in Resources */,
 				C4E4990B1E3FBB1100E567C6 /* ListController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,18 +428,16 @@
 			files = (
 				C4E4990D1E3FBD7600E567C6 /* ListPresenter.swift in Sources */,
 				C4E499091E3FBA4200E567C6 /* Result.swift in Sources */,
-				C40BF6791E3FD525005B7748 /* GooglePlace.swift in Sources */,
+				C40BF67C1E3FE1BD005B7748 /* GooglePlace.swift in Sources */,
 				C4E498F81E3FB72700E567C6 /* ListView.swift in Sources */,
 				C4E498FD1E3FB73100E567C6 /* PlaceService.swift in Sources */,
-				C46C3CB51E3FCBBA00BB359A /* DetailsViewModel.swift in Sources */,
 				C46C3CB21E3FC96000BB359A /* DetailsController.swift in Sources */,
-				C4E4990F1E3FC56200E567C6 /* ListRouter.swift in Sources */,
-				C4E499031E3FB89000E567C6 /* PlaceCell.swift in Sources */,
-				C46C3CB81E3FCD8400BB359A /* GooglePlaceService.swift in Sources */,
 				C4E498B91E3FB1C300E567C6 /* AppDelegate.swift in Sources */,
 				C4E498F91E3FB72700E567C6 /* PlaceViewModel.swift in Sources */,
 				C4E498FC1E3FB73100E567C6 /* Place.swift in Sources */,
 				C4E499071E3FB94700E567C6 /* FakePlaceService.swift in Sources */,
+				C40BF67F1E3FE1C7005B7748 /* ListRouter.swift in Sources */,
+				C40BF67D1E3FE1BD005B7748 /* GooglePlaceService.swift in Sources */,
 				C4E498FF1E3FB75400E567C6 /* ListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

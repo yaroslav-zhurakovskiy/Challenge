@@ -11,6 +11,13 @@ import UIKit
 
 class ListController: UIViewController, UITableViewDataSource, UITableViewDelegate,  UITextFieldDelegate, ListView {
     
+    // MARK: Internal State
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet  weak var keywordField: UITextField!
+    @IBOutlet  weak var errorLabel: UILabel!
+    private var list: PlacesListViewModel!
+    
+    // MARK: Presenter
     var presenter: ListPresenter?
     
     // MARK: ListView
@@ -33,6 +40,8 @@ class ListController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         self.tableView.tableFooterView = UIView()
         self.navigationItem.title = "Search for places"
+        self.tableView.estimatedRowHeight = 44
+        self.tableView.rowHeight = UITableViewAutomaticDimension
     }
     
     // MARK: UITableViewDataSource
@@ -44,6 +53,8 @@ class ListController: UIViewController, UITableViewDataSource, UITableViewDelega
         var cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         if cell == nil {
             cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
+            cell?.textLabel?.numberOfLines = 0;
+            cell?.textLabel?.lineBreakMode = .byWordWrapping
         }
         
         let model = list.model(at: indexPath.row)
@@ -69,10 +80,4 @@ class ListController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBAction func processKeywordChanged(_ sender: UITextField) {
         self.delegate?.onKeywordChange(newValue: sender.text)
     }
-    
-    // MARK: Internal State
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet  weak var keywordField: UITextField!
-    @IBOutlet  weak var errorLabel: UILabel!
-    private var list: PlacesListViewModel!
 }

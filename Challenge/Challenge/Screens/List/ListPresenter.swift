@@ -10,6 +10,11 @@ import Foundation
 
 
 class ListPresenter: ListViewDelete {
+    private weak var view: ListView!
+    private let service: PlaceService
+    private let router: ListRouter
+    private var lastResult: PlaceServiceFetchingResult?
+    
     init(view: ListView, service: PlaceService, router: ListRouter) {
         self.service = service
         self.router = router
@@ -24,10 +29,13 @@ class ListPresenter: ListViewDelete {
     
     func onKeywordChange(newValue: String?) {
         self.view.display(error: "")
+        self.view.display(list: PlacesListViewModel(places: []))
+        
         self.service.fetch(keyword: newValue) { result in
             self.lastResult = result
             switch result {
             case .Success(let places):
+                self.view.display(error: "")
                 self.view.display(list: PlacesListViewModel(places: places))
             case .Failure(let error):
                 self.view.display(list: PlacesListViewModel(places: []))
@@ -51,9 +59,4 @@ class ListPresenter: ListViewDelete {
             }
         }
     }
-    
-    private weak var view: ListView!
-    private let service: PlaceService
-    private let router: ListRouter
-    private var lastResult: PlaceServiceFetchingResult?
 }

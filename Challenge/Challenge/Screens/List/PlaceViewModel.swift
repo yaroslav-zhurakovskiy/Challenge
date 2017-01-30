@@ -10,18 +10,20 @@ import Foundation
 
 
 struct PlaceViewModel {
+    private let place: Place;
+
     init(place: Place) {
         self.place = place
     }
     
     var displayText: String {
-        return place.displayText
+        return place.name
     }
-    
-    private let place: Place;
 }
 
 struct PlacesListViewModel {
+    private var models: [PlaceViewModel];
+
     init(places: [Place]) {
         models = places.map { PlaceViewModel(place: $0) }
     }
@@ -33,6 +35,4 @@ struct PlacesListViewModel {
     func model(at index: Int) -> PlaceViewModel {
         return models[index]
     }
-    
-    private var models: [PlaceViewModel];
 }

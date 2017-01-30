@@ -16,16 +16,18 @@ protocol ListRouter {
 
 class NoListRouter: ListRouter {
     func showDetails(of place: Place) {
-        print(place.displayText)
+        print(place.name)
     }
 }
 
 
 class StandardListsRouter: ListRouter {
     private let controller: ListController;
+    
     init(controller: ListController) {
         self.controller = controller;
     }
+    
     func showDetails(of place: Place) {
         let vc = DetailsController(place: place)
         self.controller.navigationController?.pushViewController(vc, animated: true)
