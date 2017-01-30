@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 
-class GooglePlace: Place {
+struct GooglePlace: Place {
     let name: String
     private let placeID: String
     private let service: GooglePlaceService
