@@ -32,6 +32,7 @@ class ListController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.delegate?.onLoad()
         
         self.tableView.tableFooterView = UIView()
+        self.navigationItem.title = "Search for places"
     }
     
     // MARK: UITableViewDataSource

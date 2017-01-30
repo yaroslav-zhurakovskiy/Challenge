@@ -19,3 +19,16 @@ class NoListRouter: ListRouter {
         print(place.displayText)
     }
 }
+
+
+class StandardListsRouter: ListRouter {
+    private let controller: ListController;
+    init(controller: ListController) {
+        self.controller = controller;
+    }
+    func showDetails(of place: Place) {
+        let viewModel = DetailsViewModel(title: "Deails", description: place.displayText)
+        let vc = DetailsController(viewModel: viewModel)
+        self.controller.navigationController?.pushViewController(vc, animated: true)
+    }
+}

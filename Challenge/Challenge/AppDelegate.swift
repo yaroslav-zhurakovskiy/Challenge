@@ -19,10 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
         let controller = ListController(nibName: nil, bundle: nil);
-        let router: ListRouter = NoListRouter()
-        controller.presenter = ListPresenter(view: controller, service: FakePlaceService(), router: router)
+        let router: ListRouter = StandardListsRouter(controller: controller)
+        let service: PlaceService = GooglePlaceService(apiKey: "AIzaSyCU9z2s9VMjE_6i10T3JSNIeVezOCvLY4A")
+        controller.presenter = ListPresenter(view: controller, service: service, router: router)
         
-        self.window?.rootViewController = controller
+        self.window?.rootViewController = UINavigationController(rootViewController: controller)
         self.window?.makeKeyAndVisible()
         
         return true

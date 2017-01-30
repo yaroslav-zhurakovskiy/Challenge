@@ -12,10 +12,11 @@ import Foundation
 enum PlaceServiceFetchingError: Error {
     case NoPlacesFound
     case ServiceUnavailable
+    case ServiceError
 }
 
 typealias PlaceServiceFetchingResult = Result<[Place], PlaceServiceFetchingError>
 
 protocol PlaceService {
-    func fetch(keyword: String?, completion: (PlaceServiceFetchingResult) -> Void)
+    func fetch(keyword: String?, completion: @escaping (PlaceServiceFetchingResult) -> Void)
 }

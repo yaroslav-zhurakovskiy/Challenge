@@ -1,5 +1,5 @@
 //
-//  Place.swift
+//  DetailsViewModel.swift
 //  Challenge
 //
 //  Created by Yaroslav Zhurakovskiy on 1/30/17.
@@ -9,7 +9,7 @@
 import Foundation
 
 
-protocol Place {
-    var displayText: String { get }
-    func fetchInfo(completion: @escaping (String?) -> Void)
+struct DetailsViewModel {
+    let title: String
+    let description: String;
 }

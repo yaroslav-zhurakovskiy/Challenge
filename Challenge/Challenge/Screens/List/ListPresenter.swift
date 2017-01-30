@@ -36,6 +36,8 @@ class ListPresenter: ListViewDelete {
                     self.view.display(error: "No places were found.")
                 case .ServiceUnavailable:
                     self.view.display(error: "Service is unavailable.")
+                case .ServiceError:
+                    self.view.display(error: "Service error.")
                 }
             }
         }

@@ -9,8 +9,16 @@
 import Foundation
 
 
+struct FakePlace: Place {
+    let displayText: String
+
+    func fetchInfo(completion: @escaping (String?) -> Void) {
+        completion("Fake Place Info")
+    }
+}
+
 class FakePlaceService: PlaceService {
-    func fetch(keyword: String?, completion: (PlaceServiceFetchingResult) -> Void) {
+    func fetch(keyword: String?, completion: @escaping (PlaceServiceFetchingResult) -> Void) {
         let processedKeyword = (keyword ?? "").lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
         if processedKeyword == "error" {
             completion(Result.Failure(.ServiceUnavailable))
@@ -19,11 +27,11 @@ class FakePlaceService: PlaceService {
         } else {
             if processedKeyword.characters.count > 0 {
                 let places: [Place] = [
-                    Place(displayText: "New York, USA"),
-                    Place(displayText: "Tokyo, Japan"),
-                    Place(displayText: "Madird, Spain"),
-                    Place(displayText: "Moscow, Russia"),
-                    Place(displayText: "Kiev, Ukraine")
+                    FakePlace(displayText: "New York, USA"),
+                    FakePlace(displayText: "Tokyo, Japan"),
+                    FakePlace(displayText: "Madird, Spain"),
+                    FakePlace(displayText: "Moscow, Russia"),
+                    FakePlace(displayText: "Kiev, Ukraine")
                 ]
                 completion(Result.Success(places))
             } else {
