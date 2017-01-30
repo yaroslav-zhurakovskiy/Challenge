@@ -1,15 +1,27 @@
 PODS:
   - Alamofire (4.3.0)
+  - PainlessInjection (0.0.1)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.3)
+  - PainlessInjection (from `https://github.com/yaroslav-zhurakovskiy/PainlessInjection.git`)
   - SwiftyJSON
+
+EXTERNAL SOURCES:
+  PainlessInjection:
+    :git: https://github.com/yaroslav-zhurakovskiy/PainlessInjection.git
+
+CHECKOUT OPTIONS:
+  PainlessInjection:
+    :commit: 3a19beaac4c96232308836ac1c77218282812393
+    :git: https://github.com/yaroslav-zhurakovskiy/PainlessInjection.git
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  PainlessInjection: 98e14901fbd2d761699f040d9e27464d4d33bafe
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 5f39f6decfd8a110895c78eea92a2105ed8c1f58
+PODFILE CHECKSUM: e21a0435c5d3c7ec3c4e0bb3e308af0962c33cdf
 
 COCOAPODS: 1.1.1

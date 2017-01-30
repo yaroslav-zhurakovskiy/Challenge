@@ -3,6 +3,7 @@ platform :ios, '9.0'
 target 'Challenge' do
   use_frameworks!
   
+  pod 'PainlessInjection', :git=>'https://github.com/yaroslav-zhurakovskiy/PainlessInjection.git'
   pod 'Alamofire', '~> 4.3'
   pod 'SwiftyJSON'
 end

@@ -11,8 +11,12 @@
 		C40BF67C1E3FE1BD005B7748 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BF67A1E3FE1BD005B7748 /* GooglePlace.swift */; };
 		C40BF67D1E3FE1BD005B7748 /* GooglePlaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BF67B1E3FE1BD005B7748 /* GooglePlaceService.swift */; };
 		C40BF67F1E3FE1C7005B7748 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BF67E1E3FE1C7005B7748 /* ListRouter.swift */; };
-		C46C3CB21E3FC96000BB359A /* DetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46C3CB01E3FC96000BB359A /* DetailsController.swift */; };
-		C46C3CB31E3FC96000BB359A /* DetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C46C3CB11E3FC96000BB359A /* DetailsController.xib */; };
+		C40BF6821E3FE3E1005B7748 /* ListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BF6811E3FE3E1005B7748 /* ListModule.swift */; };
+		C40BF6841E3FE543005B7748 /* FakeServicesPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BF6831E3FE543005B7748 /* FakeServicesPredicate.swift */; };
+		C40BF6861E3FE553005B7748 /* LiveServicesPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BF6851E3FE553005B7748 /* LiveServicesPredicate.swift */; };
+		C40BF6881E3FE58B005B7748 /* PlaceServiceModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BF6871E3FE58B005B7748 /* PlaceServiceModule.swift */; };
+		C40BF68B1E3FE776005B7748 /* DetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40BF6891E3FE776005B7748 /* DetailsController.swift */; };
+		C40BF68C1E3FE776005B7748 /* DetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40BF68A1E3FE776005B7748 /* DetailsController.xib */; };
 		C4E498B91E3FB1C300E567C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E498B81E3FB1C300E567C6 /* AppDelegate.swift */; };
 		C4E498C01E3FB1C300E567C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4E498BF1E3FB1C300E567C6 /* Assets.xcassets */; };
 		C4E498C31E3FB1C300E567C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E498C11E3FB1C300E567C6 /* LaunchScreen.storyboard */; };
@@ -53,8 +57,12 @@
 		C40BF67A1E3FE1BD005B7748 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GooglePlace.swift; path = Google/GooglePlace.swift; sourceTree = "<group>"; };
 		C40BF67B1E3FE1BD005B7748 /* GooglePlaceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GooglePlaceService.swift; path = Google/GooglePlaceService.swift; sourceTree = "<group>"; };
 		C40BF67E1E3FE1C7005B7748 /* ListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListRouter.swift; path = Screens/List/ListRouter.swift; sourceTree = "<group>"; };
-		C46C3CB01E3FC96000BB359A /* DetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsController.swift; sourceTree = "<group>"; };
-		C46C3CB11E3FC96000BB359A /* DetailsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsController.xib; sourceTree = "<group>"; };
+		C40BF6811E3FE3E1005B7748 /* ListModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListModule.swift; path = Modules/ListModule.swift; sourceTree = "<group>"; };
+		C40BF6831E3FE543005B7748 /* FakeServicesPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FakeServicesPredicate.swift; path = Modules/FakeServicesPredicate.swift; sourceTree = "<group>"; };
+		C40BF6851E3FE553005B7748 /* LiveServicesPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiveServicesPredicate.swift; path = Modules/LiveServicesPredicate.swift; sourceTree = "<group>"; };
+		C40BF6871E3FE58B005B7748 /* PlaceServiceModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaceServiceModule.swift; path = Modules/PlaceServiceModule.swift; sourceTree = "<group>"; };
+		C40BF6891E3FE776005B7748 /* DetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsController.swift; path = Screens/Details/DetailsController.swift; sourceTree = "<group>"; };
+		C40BF68A1E3FE776005B7748 /* DetailsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailsController.xib; path = Screens/Details/DetailsController.xib; sourceTree = "<group>"; };
 		C4E498B51E3FB1C300E567C6 /* Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E498B81E3FB1C300E567C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4E498BF1E3FB1C300E567C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,11 +132,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C40BF6801E3FE3A0005B7748 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C40BF6811E3FE3E1005B7748 /* ListModule.swift */,
+				C40BF6851E3FE553005B7748 /* LiveServicesPredicate.swift */,
+				C40BF6831E3FE543005B7748 /* FakeServicesPredicate.swift */,
+				C40BF6871E3FE58B005B7748 /* PlaceServiceModule.swift */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
 		C46C3CAF1E3FC8B400BB359A /* Details */ = {
 			isa = PBXGroup;
 			children = (
-				C46C3CB01E3FC96000BB359A /* DetailsController.swift */,
-				C46C3CB11E3FC96000BB359A /* DetailsController.xib */,
+				C40BF6891E3FE776005B7748 /* DetailsController.swift */,
+				C40BF68A1E3FE776005B7748 /* DetailsController.xib */,
 			);
 			name = Details;
 			sourceTree = "<group>";
@@ -167,6 +186,7 @@
 		C4E498B71E3FB1C300E567C6 /* Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				C40BF6801E3FE3A0005B7748 /* Modules */,
 				C46C3CB61E3FCD5E00BB359A /* Google */,
 				C4E499051E3FB92500E567C6 /* Fake */,
 				C4E498F01E3FB4FD00E567C6 /* Screens */,
@@ -350,9 +370,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C40BF68C1E3FE776005B7748 /* DetailsController.xib in Resources */,
 				C4E498C31E3FB1C300E567C6 /* LaunchScreen.storyboard in Resources */,
 				C4E498C01E3FB1C300E567C6 /* Assets.xcassets in Resources */,
-				C46C3CB31E3FC96000BB359A /* DetailsController.xib in Resources */,
 				C4E4990B1E3FBB1100E567C6 /* ListController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,15 +446,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C40BF68B1E3FE776005B7748 /* DetailsController.swift in Sources */,
+				C40BF6881E3FE58B005B7748 /* PlaceServiceModule.swift in Sources */,
 				C4E4990D1E3FBD7600E567C6 /* ListPresenter.swift in Sources */,
+				C40BF6821E3FE3E1005B7748 /* ListModule.swift in Sources */,
 				C4E499091E3FBA4200E567C6 /* Result.swift in Sources */,
 				C40BF67C1E3FE1BD005B7748 /* GooglePlace.swift in Sources */,
 				C4E498F81E3FB72700E567C6 /* ListView.swift in Sources */,
 				C4E498FD1E3FB73100E567C6 /* PlaceService.swift in Sources */,
-				C46C3CB21E3FC96000BB359A /* DetailsController.swift in Sources */,
 				C4E498B91E3FB1C300E567C6 /* AppDelegate.swift in Sources */,
+				C40BF6841E3FE543005B7748 /* FakeServicesPredicate.swift in Sources */,
 				C4E498F91E3FB72700E567C6 /* PlaceViewModel.swift in Sources */,
 				C4E498FC1E3FB73100E567C6 /* Place.swift in Sources */,
+				C40BF6861E3FE553005B7748 /* LiveServicesPredicate.swift in Sources */,
 				C4E499071E3FB94700E567C6 /* FakePlaceService.swift in Sources */,
 				C40BF67F1E3FE1C7005B7748 /* ListRouter.swift in Sources */,
 				C40BF67D1E3FE1BD005B7748 /* GooglePlaceService.swift in Sources */,
